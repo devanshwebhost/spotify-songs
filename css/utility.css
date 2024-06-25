@@ -1,0 +1,56 @@
+.bg-black{
+    background-color: black;
+    color: white;
+}
+
+.bg-gray{
+    background-color: #121212;
+}
+.flex{
+    display: flex;
+}
+.align-item-c{
+    align-items: center;
+}
+.justify-c{
+    justify-content: center;
+}
+
+.invert{
+    filter: invert(1);
+}
+
+.rounded{
+    border-radius: 10px;
+}
+
+.d-width{
+    width: 20px;
+}
+
+.scrollable-div {
+    /* Set the maximum height and width for the div */
+    max-height: 50vh; /* Adjust as needed */
+    max-width: 366px; /* Adjust as needed */
+    /* Hide the vertical scrollbar by default */
+    overflow-y: hidden;
+    /* Add padding to ensure the scrollbar doesn't overlap content */
+    padding-right: 15px; /* Adjust as needed */
+}
+
+/* Show the scrollbar when the div is hovered */
+.scrollable-div:hover {
+    overflow-y: auto;
+}
+
+.progress-bar-success {
+    background-color: #5cb85c;
+}
+
+.no-select {
+    user-select: none; /* Standard syntax */
+    -webkit-user-select: none; /* Chrome, Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+

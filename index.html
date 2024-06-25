@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="shortcut icon" href="https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/utility.css">
+</head>
+
+<body>
+    <div class="container bg-black flex">
+        <div class="left bg-black">
+            <div class="home bg-gray rounded">
+                <div class="close invert">
+                    <img src="/img/close.svg" alt="close">
+                </div>
+                <div class="logo invert"><img src="/img/logo.svg" alt="logo"></div>
+                <ul>
+                    <li class="no-select"><img class="invert no-select" src="/img/home.svg" alt="home">Home</li>
+                    <li><img class="invert" src="/img/search.svg" alt="search">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-gray rounded">
+                <div class="heading flex no-select">
+                    <img class="invert d-width " src="/img/lab.svg" alt="playlist">
+                    <h3 class="no-select" id="libraury_update">
+                        Your library
+                    </h3>
+                </div>
+                <div class="songList scrollable-div">
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="footer">
+
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/" id="" data-encore-id="textLink">
+                            <span data-encore-id="type">Legal</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/" id="" data-encore-id="textLink">
+                            <span data-encore-id="type">Privacy</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/cookies-policy/" id="" data-encore-id="textLink">
+                            <span data-encore-id="type">Cookies</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3" id=""
+                            data-encore-id="textLink">
+                            <span data-encore-id="type">Ads</span>
+                        </a>
+
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/accessibility/" id="" data-encore-id="textLink">
+                            <span data-encore-id="type">Accessibility</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a draggable="false" href="https://www.spotify.com/legal/cookies-policy/" target="_blank"
+                            rel="noopener">
+                            <span data-encore-id="text">Cookies</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="right bg-black">
+            <nav class="bg-gray rounded ">
+
+                <div class="lb flex justify-c align-item-c">
+                    <div class="hamburger">
+                        <img class="invert" src="/img/hamburger.svg" alt="hamburger">
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff"
+                        fill="none">
+                        <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff"
+                        fill="none">
+                        <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="button">
+                    <button class="sing-up">Sign up</button>
+                    <button class="log-in">Log in</button>
+                </div>
+            </nav>
+            <div class="content">
+                <h2 class="no-select">Popular albums</h2>
+                <div class="card_container">
+                </div>
+            </div>
+            <div class="player bg-gray">
+                <div class="songbutton">
+                    <img id="previous" src="/img/left_play.svg" alt="previous">
+                    <img id="play" src="/img/play1.svg" alt="play1">
+                    <img id="next" src="/img/right_play.svg" alt="next">
+                </div>
+
+                <div class="volume">
+                    <img class="invert" id="mute" src="/img/unmute.svg" alt="volume">
+                    <!-- <input type="range" name="volume" id="range"> -->
+                </div>
+                <p id="songTime" class="invert no-select songTime">
+                </p>
+                <!-- pass word hostmost $9yXg#c8Y72o -->
+                <div class="playbar_songul invert no-select">
+                    <h4>Now playing <img class="" src="/img/soundTrack.svg" alt="Tracker"></h4>
+                    <span id="playbar_songName"></span>
+                </div>
+                <div class="seekbar">
+                    <div class="progress"></div>
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
